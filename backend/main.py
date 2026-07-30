@@ -47,49 +47,48 @@ def analyze_fire(location: dict):
     latitude = location.get("latitude")
     longitude = location.get("longitude")
 
-    # NEW
     fire_start_time = location.get("fire_start_time")
     radius_km = location.get("radius_km", 1)
 
-    # 1. Satellite Intelligence
+    # Satellite Intelligence
     satellite = get_satellite_info(
         latitude,
         longitude
     )
 
-    # 2. Weather Intelligence
+    # Weather Intelligence
     weather = get_weather(
         latitude,
         longitude
     )
 
-    # 3. Fire Risk Analysis
+    # Fire Risk Analysis
     risk = analyze_fire_risk(
         weather,
         satellite
     )
 
-    # 4. Fire Spread Simulation
+    # Fire Spread Prediction
     spread = predict_fire_spread(
         weather,
         risk
     )
 
-    # 5. Settlement Detection
+    # Nearby Settlements
     settlements = find_nearby_settlements(
         latitude,
         longitude
     )
 
-    # 6. Emergency Commander
+    # Emergency Response Plan
     response = generate_response_plan(
         risk,
         spread,
         weather
     )
 
-    return {
 
+    return {
         "incident": {
             "fire_start_time": fire_start_time,
             "analysis_radius_km": radius_km
@@ -111,6 +110,4 @@ def analyze_fire(location: dict):
         "nearby_settlements": settlements,
 
         "commander_response": response
-
     }
-}
