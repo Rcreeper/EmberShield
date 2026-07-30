@@ -1,0 +1,270 @@
+.analysis-card {
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 18px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #d8ead8;
+
+    box-shadow: 0 5px 15px rgba(27,127,58,0.08);
+
+}
+
+
+
+.card-title {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #1b7f3a;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+
+
+/* RISK CARD */
+
+
+.risk-score {
+
+    display: inline-block;
+
+    background: #e7f6e7;
+
+    color: #1b7f3a;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+
+
+/* GENERAL CARD CONTENT */
+
+
+.card-section {
+
+    margin-top: 12px;
+
+    color: #355b40;
+
+}
+
+
+
+.card-section strong {
+
+    color: #1b7f3a;
+
+}
+
+
+
+.card-section p {
+
+    margin-top: 6px;
+
+    line-height: 1.5;
+
+    color: #45624c;
+
+}
+
+
+
+
+
+/* WEATHER CARD */
+
+
+.weather-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+}
+
+
+
+.weather-item {
+
+    background: #f4f8f4;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+
+.weather-item span {
+
+    color: #56745c;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+
+}
+
+
+
+.weather-item strong {
+
+    color: #1b7f3a;
+
+    font-size: 17px;
+
+}
+
+
+
+
+
+/* FIRE SPREAD CARD */
+
+
+.spread-box {
+
+    background:#f4f8f4;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.spread-box strong {
+
+    color:#1b7f3a;
+
+}
+
+
+
+.spread-value {
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    color:#1b7f3a;
+
+}
+
+
+
+
+
+/* SETTLEMENT CARD */
+
+
+.settlement-item {
+
+    background:#f4f8f4;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.settlement-name {
+
+    font-weight:bold;
+
+    color:#1b7f3a;
+
+}
+
+
+
+.settlement-distance {
+
+    color:#56745c;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+/* COMMANDER CARD */
+
+
+.command-box {
+
+    background:#e7f6e7;
+
+    border-left:5px solid #1b7f3a;
+
+    padding:12px;
+
+    border-radius:10px;
+
+}
+
+
+
+.command-box p {
+
+    color:#355b40;
+
+    line-height:1.5;
+
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+
+@media(max-width:900px) {
+
+
+    .weather-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}
