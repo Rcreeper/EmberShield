@@ -1,7 +1,8 @@
 fastapi
-uvicorn
+uvicorn[standard]
 python-dotenv
-requests
-pandas
 openpyxl
-numpy
+Pillow
+requests
+anthropic
+google-genai
