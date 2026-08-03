@@ -6,3 +6,4 @@ Pillow
 requests
 anthropic
 google-genai
+python-multipart
